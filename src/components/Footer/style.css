@@ -1,0 +1,98 @@
+/* ===== Footer base ===== */
+.footer-container {
+  width: 100%;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #ddd;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: auto;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* quando passa o mouse */
+.footer-container:hover {
+  background: linear-gradient(135deg, #111, #222);
+}
+
+/* ===== Card visual ===== */
+.card {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  padding: 3px;
+}
+
+.card2 {
+  background-color: #1a1a1a;
+  border-radius: 17px;
+  transition: all 0.2s;
+  padding: 1.5rem;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+/* ===== Conteúdo do footer ===== */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.footer-content strong {
+  font-size: 1.1rem;
+  color: #00ff88;
+}
+
+.copy {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .footer-container {
+    font-size: 0.85rem;
+    padding: 1.5rem 0.8rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* ===== Tema claro ===== */
+@media (prefers-color-scheme: light) {
+  .footer-container {
+    background: linear-gradient(135deg, #f4f4f4, #e8e8e8);
+    color: #222;
+  }
+
+  .footer-container:hover {
+    background: linear-gradient(135deg, #e0e0e0, #d6d6d6);
+  }
+
+  .card2 {
+    background-color: #fefefe;
+    color: #111;
+  }
+
+  .footer-content strong {
+    color: #3700ff;
+  }
+}
